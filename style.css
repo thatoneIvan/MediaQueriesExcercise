@@ -1,0 +1,65 @@
+/* (Do not alter the html in any way)... */
+
+h1 {
+  color: gray;
+  font-size: 50px;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+}
+
+/* START BELOW THIS LINE */ 
+/* 1 */
+/* Man this took a good minute to figure out LOOK AT LINES 17-21 on notes */
+@media (max-width: 800px) {
+  body {
+    background-color: navy;
+  }
+}
+/* 2 */
+@media (max-width:600px){
+  body {
+    background-color: orange;
+  }
+}
+/* 3 */
+/* Example on notes lines 47-50  */
+@media (min-width:400px) and (max-width:600px){
+  #one {
+    border: 10px dashed;
+    color: gray;
+  }
+
+  #three {
+    border: 10px dotted;
+    color: gray;
+
+  }
+}
+/* 4 */
+@media (min-width:900px) and (max-width:500px){
+
+  #two {
+    border-top: solid;
+    color:gray;
+  }
+}
+/* 5 */
+@media (orientation:landscape) {
+  body{
+      display: flex;
+      flex-direction: row;
+  }
+}
+/* 6 */
+@media (orientation:portrait) {
+    body{ 
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   
+ }
+
+}
